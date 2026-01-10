@@ -4,6 +4,10 @@
 // object literals
 
 const mySym = Symbol("key1")
+// const mySym2=Symbol("key1")
+// console.log(mySym2);
+// console.log(mySym);
+
 
 
 const JsUser = {
@@ -17,10 +21,10 @@ const JsUser = {
     lastLoginDays: ["Monday", "Saturday"]
 }
 
-// console.log(JsUser.email)
-// console.log(JsUser["email"])
-// console.log(JsUser["full name"])
-// console.log(JsUser[mySym])
+console.log(JsUser.email)
+console.log(JsUser["email"])
+console.log(JsUser["full name"])
+console.log(JsUser[mySym])
 
 JsUser.email = "hitesh@chatgpt.com"
 // Object.freeze(JsUser)
