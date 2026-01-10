@@ -1,18 +1,21 @@
 const score = 400
 // console.log(score);
 
-const balance = new Number(100)
+const balance = new Number(100) //typeof balance -> object
+
+
 // console.log(balance);
 
-// console.log(balance.toString().length);
-// console.log(balance.toFixed(1));
+console.log(balance.toString().length); //3
+console.log(balance.toFixed(3)); //100.000
 
 const otherNumber = 123.8966
-
-console.log(otherNumber.toPrecision(6))
+ 
+console.log(otherNumber.toPrecision(3))  //124
+console.log(otherNumber.toPrecision(5))  //123.90
 
 const hundreds = 1000000
-// console.log(hundreds.toLocaleString('en-IN'));
+console.log(hundreds.toLocaleString('en-IN'));
 
 // +++++++++++++ Maths +++++++++++++++++++++++++++++
 

@@ -19,7 +19,7 @@ const gameName = new String('hitesh-hc-com') // typeof gameName -> object
 // const newString = gameName.substring(0, 4)
 // console.log(newString);
 
-const anotherString = gameName.slice(-8, 4)
+const anotherString = gameName.slice(-8, 4)  //Negative index = length + index ///slice(5,4) since start>end so slice returns ""
 console.log(anotherString);
 
 const newStringOne = "   hitesh    "
