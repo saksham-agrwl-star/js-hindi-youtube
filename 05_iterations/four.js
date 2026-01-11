@@ -12,15 +12,21 @@ for (const key in myObject) {
 const programming = ["js", "rb", "py", "java", "cpp"]
 
 for (const key in programming) {
-    //console.log(programming[key]);
+    //console.log(programming[key]); //key is index
 }
 
-// const map = new Map()
-// map.set('IN', "India")
-// map.set('USA', "United States of America")
-// map.set('Fr', "France")
-// map.set('IN', "India")
+//Map does NOT allow duplicate keys and maintains sorted order
+const map = new Map()
+map.set('IN', "India")
+map.set('USA', "United States of America")
+map.set('Fr', "France")
+map.set('IN', "Indiia")
 
-// for (const key in map) {
-//     console.log(key);
-// }
+for (const key in map) {
+    console.log(key);
+}
+//for in does not work on map as map is not enumerable like objects
+
+for ( [key, value] of map) {
+    console.log(key, value); //for of works with map
+}
