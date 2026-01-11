@@ -8,32 +8,32 @@ const user = {
     }
 
 }
-
+//console.log(user)
 // user.welcomeMessage()
 // user.username = "sam"
 // user.welcomeMessage()
 
-// console.log(this);
+console.log(this); //{}
 
-// function chai(){
-//     let username = "hitesh"
-//     console.log(this.username);
-// }
+function chai(){
+    let username = "hitesh"
+    console.log(this.username); //undefined
+}
 
-// chai()
+chai()
 
 // const chai = function () {
 //     let username = "hitesh"
-//     console.log(this.username);
+//     console.log(this.username); //undefined
 // }
 
-const chai = function() {
-    let username = "hitesh"
-    console.log(this);
-}
+// const chai = function() {
+//     let username = "hitesh"
+//     console.log(this);
+// }
 
 
- chai()
+// chai()
 
 // const addTwo = (num1, num2) => {
 //     return num1 + num2
@@ -41,12 +41,12 @@ const chai = function() {
 
 // const addTwo = (num1, num2) =>  num1 + num2
 
-// const addTwo = (num1, num2) => ( num1 + num2 )
+//  const addTwo = (num1, num2) => ( num1 + num2 )
 
 // const addTwo = (num1, num2) => ({username: "hitesh"})
 
 
-// console.log(addTwo(3, 4))
+c//onsole.log(addTwo(3, 4))
 
 
 // const myArray = [2, 5, 3, 7, 8]

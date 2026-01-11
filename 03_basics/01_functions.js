@@ -36,14 +36,14 @@ function loginUserMessage(username = "sam"){
 }
 
 // console.log(loginUserMessage("hitesh"))
-// console.log(loginUserMessage("hitesh"))
+// console.log(loginUserMessage()) //sam just logged in
 
 
-function calculateCartPrice(val1, val2, ...num1){
+function calculateCartPrice(val1,val2, ...num1){ //val1 and val2 will be ignored
     return num1
 }
 
-// console.log(calculateCartPrice(200, 400, 500, 2000))
+console.log(calculateCartPrice(200, 400, 500, 2000))
 
 const user = {
     username: "hitesh",
