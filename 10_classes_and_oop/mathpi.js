@@ -17,18 +17,36 @@ const chai = {
 }
 
 console.log(Object.getOwnPropertyDescriptor(chai, "name"));
+/*
+output:
+{
+  value: 'ginger chai',
+  writable: true,
+  enumerable: true,
+  configurable: true
+}
+*/
 
 Object.defineProperty(chai, 'name', {
-    //writable: false,
-    enumerable: true,
+    writable: false,
+    enumerable: false,
     
 })
+/*
+output:
+{
+  value: 'ginger chai',
+  writable: false,
+  enumerable: false,
+  configurable: true
+}
+*/
 
 console.log(Object.getOwnPropertyDescriptor(chai, "name"));
 
 for (let [key, value] of Object.entries(chai)) {
     if (typeof value !== 'function') {
         
-        console.log(`${key} : ${value}`);
+        console.log(`${key} : ${value}`); //name: ginger chai will not be printed because name property has made enumerable false
     }
 }
